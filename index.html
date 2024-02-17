@@ -14,14 +14,14 @@
     <script src="https://kit.fontawesome.com/ab49a9cf69.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-raleway">
+<body class="font-raleway w-[97%] mx-auto">
     <header>
         <!-- ------------- Navigation Bar -------------------->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <a class="text-3xl font-extrabold"><span>SmArt</span> - Ticketing</a>
             </div>
-            
+
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-[#65676E] text-[18px]">
                     <li><a>Home</a></li>
@@ -36,8 +36,61 @@
         </div>
 
         <!------------- Banner section ---------------->
+        <section>
+            <div class="hero my-6 h-[85vh] bg-center rounded-3xl" style="background-image: url(images/banner01.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold w-max">End-to-End Travel <br> with <br><span
+                                class="text-[#1DD100]">TransitTrove Travels</span></h1>
+                        <p class="mb-5">The TransitTrove: Where every ride becomes an adventure. Discover convenience
+                            and reliability in motion, as the city unfolds before your eyes.</p>
+                        <button class="btn bg-[#1DD100] border-0 text-base font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+
+    <!--------------------- Main section started ------------------------>
     <main>
+
+        <!------- Best offer ------->
+        <div>
+            <h1 class="flex justify-center font-bold text-[40px] my-6">Best offers for you</h1>
+        </div>
+
+        <div class="grid grid-cols-2 gap-9 my-10">
+            <!-- Coupon 1 -->
+            <div class="flex gap-4 bg-[#FFBF0F] rounded-3xl justify-evenly">
+                <div class="p-5 my-auto">
+                    <h3 class="text-[40px] font-black">15% OFF</h3>
+                    <p class="text-xl font-semibold">on your next purchase</p>
+                    <p class="text-lg">use by January 2024</p>
+                </div>
+                <img class="" src="images/cupon-devider.png" alt="">
+                <div class="text-center my-auto">
+                    <h3 class="text-[32px] font-bold">NEW15</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+
+            <!-- Coupon 2 -->
+            <div class="flex gap-4 bg-[#F78C9C] rounded-3xl justify-evenly">
+                <div class="p-5 my-auto">
+                    <h3 class="text-[40px] font-black">20% OFF</h3>
+                    <p class="text-xl font-semibold">on your next purchase </p>
+                    <p class="text-lg">use by January 2024</p>
+                </div>
+                <img class="" src="images/cupon-devider.png" alt="">
+                <div class="text-center my-auto">
+                    <h3 class="text-[32px] font-bold">Couple 20</h3>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- see all offers -->
+        <button class="btn bg-transparent text-xl font-bold text-[#1DD100] border-1 border-[#1DD100] flex mx-auto">See All Offers</button>
 
     </main>
     <footer>
