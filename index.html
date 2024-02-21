@@ -13,6 +13,9 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/ab49a9cf69.js" crossorigin="anonymous"></script>
 
+    <!-- css -->
+    <link rel="stylesheet" href="Style/styles.css">
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,14 +129,14 @@
                                 <img src="images/bus-logo.png" alt="">
                             </div>
                             <div>
-                                <p class="text-3xl">Greenline Paribahan</p>
+                                <p class="text-3xl">TransitTrove Travels</p>
                                 <p class="text-[#03071299]">Coach-009-WEB || AC Economy Class</p>
                             </div>
                         </div>
                         <!-- Seats left -->
                         <div>
                             <a class="btn bg-[#E8FAE5] text-[#1DD100] text-lg"> <img src="images/seat-green.png"
-                                    alt="">40 Seats left</a>
+                                    alt=""><span id="total-seat">40</span> Seats left</a>
                         </div>
                     </div>
                     <br>
@@ -186,103 +189,93 @@
                         <img class="bg-[#E6E6E7] border-black rounded-2xl px-7 py-3" src="images/Vector.png" alt="">
                     </div>
                     <!-- All seats -->
-                    <div class="grid grid-row grid-cols-6 gap-6">
+                    <div class="grid grid-row grid-cols-6 gap-6 font-inter">
                         <div class=" rounded-2xl px-7 py-3">A</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">A1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">A2</div>
+                        <div id="A1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">A1</div>
+                        <div id="A2" id="A2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">A2
+                        </div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">A3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">A4</div>
+                        <div id="A3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">A3</div>
+                        <div id="A4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">A4</div>
                         <div class=" rounded-2xl px-7 py-3">B</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">B1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">B2</div>
+                        <div id="B1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">B1</div>
+                        <div id="B2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">B2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">B3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">B4</div>
+                        <div id="B3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">B3</div>
+                        <div id="B4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">B4</div>
                         <div class=" rounded-2xl px-7 py-3">C</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">C1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">C2</div>
+                        <div id="C1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">C1</div>
+                        <div id="C2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">C2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">C3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">C4</div>
+                        <div id="C3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">C3</div>
+                        <div id="C4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">C4</div>
                         <div class=" rounded-2xl px-7 py-3">D</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">D1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">D2</div>
+                        <div id="D1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">D1</div>
+                        <div id="D2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">D2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">D3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">D4</div>
-                        <div class=" rounded-2xl px-7 py-3">E</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">E1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">E2</div>
+                        <div id="D3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">D3</div>
+                        <div id="D4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">D4</div>
+                        <div class="rounded-2xl px-7 py-3">E</div>
+                        <div id="E1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">E1</div>
+                        <div id="E2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">E2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">E3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">E4</div>
-                        <div class=" rounded-2xl px-7 py-3">F</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">F1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">F2</div>
+                        <div id="E3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">E3</div>
+                        <div id="E4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">E4</div>
+                        <div class="rounded-2xl px-7 py-3">F</div>
+                        <div id="F1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">F1</div>
+                        <div id="F2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">F2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">F3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">F4</div>
-                        <div class=" rounded-2xl px-7 py-3">G</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">G1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">G2</div>
+                        <div id="F3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">F3</div>
+                        <div id="F4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">F4</div>
+                        <div class="rounded-2xl px-7 py-3">G</div>
+                        <div id="G1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">G1</div>
+                        <div id="G2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">G2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">G3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">G4</div>
-                        <div class=" rounded-2xl px-7 py-3">H</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">H1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">H2</div>
+                        <div id="G3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">G3</div>
+                        <div id="G4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">G4</div>
+                        <div class="rounded-2xl px-7 py-3">H</div>
+                        <div id="H1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">H1</div>
+                        <div id="H2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">H2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">H3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">H4</div>
-                        <div class=" rounded-2xl px-7 py-3">I</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">I1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">I2</div>
+                        <div id="H3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">H3</div>
+                        <div id="H4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">H4</div>
+                        <div class="rounded-2xl px-7 py-3">I</div> 
+                        <div id="I1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">I1</div>
+                        <div id="I2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">I2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">I3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">I4</div>
-                        <div class=" rounded-2xl px-7 py-3">J</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">J1</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">J2</div>
+                        <div id="I3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">I3</div>
+                        <div id="I4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">I4</div>
+                        <div class="rounded-2xl px-7 py-3">J</div>
+                        <div id="J1" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">J1</div>
+                        <div id="J2" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">J2</div>
                         <div></div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">J3</div>
-                        <div class="bg-[#F7F8F8] rounded-2xl px-7 py-3">J4</div>
+                        <div id="J3" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">J3</div>
+                        <div id="J4" class="click-btn bg-[#F7F8F8] rounded-2xl px-7 py-3">J4</div>
                     </div>
                 </div>
                 <hr>
                 <!-- total price -->
-                <div class="border-l-2 border-dashed w-6/12 flex flex-col px-6">
+                <div class="border-l-2 border-dashed w-6/12 flex flex-col px-6 font-inter">
                     <h2 class="text-2xl font-semibold">Buy Ticket</h2>
                     <div class="bg-[#F7F8F8] mt-4 p-4 rounded-2xl">
                         <div class="flex justify-between p-6 border-b-2 border-dashed font-medium">
-                            <h3>Seat <button class="btn btn-sm bg-[#1DD100]">2</button></h3>
+                            <h3>Seat <button id="total-selected-seat" class="btn btn-sm bg-[#1DD100]">0</button></h3>
                             <h3>Class</h3>
                             <h3>Price</h3>
                         </div>
-                        <div class="">
-                            <div class="flex justify-between px-7 my-4">
-                                <h3>C2</h3>
-                                <p>Economy</p>
-                                <p>500</p>
-                            </div>
-                            <div class="flex justify-between px-7 my-4">
-                                <h3>C2</h3>
-                                <p>Economy</p>
-                                <p>500</p>
-                            </div>
-                            <hr>
-                            <div class="flex justify-between my-2 px-6 font-medium">
-                                <p>Total price</p>
-                                <p>BDT 1100</p>
-                            </div>
-                            <label class="input ml-2 my-4 flex items-center">
-                                <input type="text" class="grow" placeholder="Have any coupon?" />
-                                <span class="bg-[#1DD100] px-6 py-2 rounded-md text-white font-semibold">Apply</span>
-                            </label>
-                            <div class="flex justify-between my-2 px-6 font-medium">
-                                <p>Grand Total</p>
-                                <p>BDT 1100</p>
-                            </div>
+                        <div id="selected-player-container"></div>
+                        <hr>
+                        <div class="flex justify-between my-2 px-6 font-medium">
+                            <p>Total price</p>
+                            <p>BDT <span id="total-price">0</span></p>
+                        </div>
+                        <label class="input ml-2 my-4 flex items-center">
+                            <input type="text" class="grow" placeholder="Have any coupon?" />
+                            <span class="bg-[#1DD100] px-6 py-2 rounded-md text-white font-semibold">Apply</span>
+                        </label>
+                        <div class="flex justify-between my-2 px-6 font-medium">
+                            <p>Grand Total</p>
+                            <p>BDT 1100</p>
                         </div>
                     </div>
                     <p class="my-4">Passenger Name*</p>
@@ -336,7 +329,7 @@
     </footer>
 
     <section>
-        <div class="flex flex-col text-center mx-auto border-2 rounded-2xl w-1/3 py-5">
+        <div class="flex flex-col text-center mx-auto border-2 rounded-2xl w-1/3 py-5 hidden">
             <img class="w-24 mx-auto" src="images/Success01.png" alt="">
             <div class="my-4">
                 <p class="text-2xl text-[#1DD100] font-bold">SUCCESS</p>
@@ -347,6 +340,10 @@
             <button class="btn px-20 bg-[#27AE60] mx-auto text-white">Continue</button>
         </div>
     </section>
+
+    <!-- script -->
+    <script src="smart-ticket.js"></script>
+
 </body>
 
 </html>
